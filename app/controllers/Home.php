@@ -21,7 +21,7 @@ class Home extends Controller
   public function index()
   {
     $user = new User();
-    $data = ['title' => 'House of caralho'];
+    $data = ['title' => 'House of application'];
     $data['users'] = $user->all();
     
     $this->nanoView('home.home-view', $data);
